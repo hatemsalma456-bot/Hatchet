@@ -1278,6 +1278,7 @@ body {
 }
 
 @media (max-width: 480px) {
+    @media (max-width: 480px) {
     .sec6 {
         padding-left: 15px;
         padding-right: 15px;
@@ -1286,18 +1287,17 @@ body {
     }
 
     .sec6 .cont {
-        padding: 20px;
+        padding: 15px;
         border-radius: 8px;
     }
 
     .sec6 .cont h2 {
-        letter-spacing: 4px;
+        letter-spacing: 3px;
     }
-
     .sec6 .cont .butoon a {
-        padding: 12px 50px 12px 12px;
+        padding: 12px 12px 12px 12px;
     }
-
+ 
     .sec6 .cont .butoon a::before {
         right: 18px;
         width: 6px;
