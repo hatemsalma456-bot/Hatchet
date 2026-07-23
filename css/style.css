@@ -413,7 +413,7 @@ header .right nav ul li .nav-item-menu li a:hover {
         padding: 10px;
     }
 
-    .sec1 .about-end{
+    /* .sec1 .about-end{
         width:100%;
         margin-top:auto;
         padding-bottom:20px;
@@ -424,6 +424,10 @@ header .right nav ul li .nav-item-menu li a:hover {
         width:100%;
         display:block;
         margin:0;
+    } */
+
+    .sec1 .about-end{
+        display: none;
     }
 }
 
