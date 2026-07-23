@@ -372,14 +372,15 @@ header .right nav ul li .nav-item-menu li a:hover {
 
 .sec1 .about-end {
     margin-top: 40px;
-    margin-left: 60px;
+    margin-left: 0px;
     width: 85%;
     transform: translateY(40px);
 }
 
 .sec1 .about-end img {
     width: 100%;
-    margin-left: 60px;
+    margin-left: 0px;
+    display: block;
 }
 
 @keyframes trans {
