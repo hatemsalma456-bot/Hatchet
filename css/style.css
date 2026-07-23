@@ -389,14 +389,17 @@ header .right nav ul li .nav-item-menu li a:hover {
 
 @media screen and (max-width: 768px) {
 
-    .sec1 {
-        background-position: 75% center;
-        background-size: cover;
+    .sec1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        background-position: 72% center;
     }
 
-    .sec1 .about {
-        width: 100%;
-        padding-top: 30px;
+    .sec1 .about{
+        width:100%;
+        margin-top:40px;
     }
 
     .sec1 .about .about-words h1 {
@@ -410,17 +413,17 @@ header .right nav ul li .nav-item-menu li a:hover {
         padding: 10px;
     }
 
-    .sec1 .about-end {
-        width: 100%;
-        margin: 20px 0 0;
-        padding: 0;
-        transform: translateY(20px);
+    .sec1 .about-end{
+        width:100%;
+        margin-top:auto;
+        padding-bottom:20px;
+        transform:none;
     }
 
-    .sec1 .about-end img {
-        width: 100%;
-        display: block;
-        margin: 0;
+    .sec1 .about-end img{
+        width:100%;
+        display:block;
+        margin:0;
     }
 }
 
@@ -1278,7 +1281,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    @media (max-width: 480px) {
     .sec6 {
         padding-left: 15px;
         padding-right: 15px;
@@ -1287,17 +1289,18 @@ body {
     }
 
     .sec6 .cont {
-        padding: 15px;
+        padding: 20px;
         border-radius: 8px;
     }
 
     .sec6 .cont h2 {
-        letter-spacing: 3px;
+        letter-spacing: 4px;
     }
+
     .sec6 .cont .butoon a {
-        padding: 12px 12px 12px 12px;
+        padding: 12px 50px 12px 12px;
     }
- 
+
     .sec6 .cont .butoon a::before {
         right: 18px;
         width: 6px;
