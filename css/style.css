@@ -413,7 +413,7 @@ header .right nav ul li .nav-item-menu li a:hover {
         padding: 10px;
     }
 
-    /* .sec1 .about-end{
+    .sec1 .about-end{
         width:100%;
         margin-top:auto;
         padding-bottom:20px;
@@ -424,23 +424,21 @@ header .right nav ul li .nav-item-menu li a:hover {
         width:100%;
         display:block;
         margin:0;
-    } */
-
-    .sec1 .about-end{
-        display: none;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 990px) {
-    .sec1 .about-end {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 40px;
-        transform: translateY(100px);
+    .sec1 .about-end{
+        width:100%;
+        margin-top:auto;
+        padding-bottom:20px;
+        transform:none;
     }
 
-    .sec1 .about-end img {
-        margin-left: 0px;
+    .sec1 .about-end img{
+        width:100%;
+        display:block;
+        margin:0;
     }
 
     .sec1 .about {
