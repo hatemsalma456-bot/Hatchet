@@ -401,11 +401,8 @@ header .right nav ul li .nav-item-menu li a:hover {
     .sec1 .about{
         width:100%;
         margin-top:50px;
+        padding-top: 80px;
     }
-
-        .sec1 .about p{
-            padding-top: 50px;
-        }
 
     .sec1 .about .about-words h1 {
         font-size: 24px;
