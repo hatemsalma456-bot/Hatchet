@@ -390,10 +390,8 @@ header .right nav ul li .nav-item-menu li a:hover {
 @media screen and (max-width: 768px) {
 
     .sec1 {
-        height: auto;
-        min-height: 100vh;
+        background-position: 75% center;
         background-size: cover;
-        background-position: center;
     }
 
     .sec1 .about {
