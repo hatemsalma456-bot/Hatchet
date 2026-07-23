@@ -29,11 +29,6 @@
     background: #c62828;
 }
 
-body {
-    overflow-x: hidden;
-    line-height: 1.5;
-}
-
 /***********Start shared container***********/
 
 .container {
