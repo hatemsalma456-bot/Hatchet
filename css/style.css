@@ -389,29 +389,40 @@ header .right nav ul li .nav-item-menu li a:hover {
 
 @media screen and (max-width: 768px) {
 
-    .sec1{
+    .sec1 {
+        height: auto;
+        min-height: 100vh;
+        background-size: cover;
         background-position: center;
-        background-size: contain;
     }
-    
+
+    .sec1 .about {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .sec1 .about .about-words h1 {
+        font-size: 24px;
+        letter-spacing: 3px;
+        padding: 10px;
+    }
+
+    .sec1 .about .about-words h3 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
     .sec1 .about-end {
         width: 100%;
-        margin: 30px 0 0;
-        padding: 0 20px;
-        transform: translateY(100px);
-        box-sizing: border-box;
+        margin: 20px 0 0;
+        padding: 0;
+        transform: translateY(20px);
     }
 
     .sec1 .about-end img {
         width: 100%;
-        height: auto;
         display: block;
         margin: 0;
-    }
-
-    .sec1 .about {
-        width: 70%;
-        padding-top: 50px;
     }
 }
 
