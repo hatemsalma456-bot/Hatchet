@@ -353,6 +353,14 @@ header .right nav ul li .nav-item-menu li a:hover {
     border-radius: 15px;
     border: solid 1px var(--mainColor);
     transition: var(--transition);
+    position: relative;
+}
+
+.sec1 .about .shape-parent .scroll-down-link {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
 }
 
 .sec1 .about .shape-child {
