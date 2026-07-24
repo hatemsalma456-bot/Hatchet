@@ -1,7 +1,5 @@
-
 let bars = document.querySelector(".bars-links");
 let barsClick = document.querySelector(".fa-bars");
-
 
 barsClick.addEventListener("click", function () {
     bars.classList.toggle("show");
@@ -9,69 +7,46 @@ barsClick.addEventListener("click", function () {
 
 const testimonials = [
     {
-        textContent: '"I love turning ideas into digital experiences that feel thoughtful, clear, and memorable."',
-        name: "Jeffrey Effendi",
-        title: "Founder & Head of Creativity",
+        text: [
+            "As a purpose-driven agency, we're constantly juggling strategy and design and have a big need to reliably execute what's planned.",
+            "It's rare that we find a tech partner who appreciates that and does it - but that's what Hatchet's done for our team, time and time again.",
+            "We've come to see them as an extension of the DrawHistory family, and that's probably the nicest thing we can say about anyone!"
+        ],
+        name: "Jeffrey Effendi - Founder & Head of Creativity",
         image: "imgs/Person Sec 5.webp"
     },
     {
-        textContent: '"I believe great design should feel natural, human, and easy to connect with from the first moment."',
-        name: "Sarah Johnson",
-        title: "CEO & Creative Director",
+        text: [
+            "We always focus on delivering creative solutions that make a real difference.",
+            "Working together has been smooth, professional, and enjoyable from start to finish.",
+            "Their attention to detail and commitment to quality is outstanding."
+        ],
+        name: "Sarah Johnson - CEO & Creative Director",
         image: "imgs/person1.jpeg"
     },
     {
-        textContent: '"I focus on creating work that is practical, polished, and built around real people and real needs."',
-        name: "Michael Chen",
-        title: "Product Manager",
+        text: [
+            "Every project is handled with care and precision.",
+            "The team communicates clearly and always delivers on time.",
+            "I would happily recommend them to anyone looking for a reliable partner."
+        ],
+        name: "Michael Chen - Product Manager",
         image: "imgs/person2.jpeg"
     }
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
-    const radios = document.querySelectorAll('input[name="inlineRadioOptions"]');
-    const textContainer = document.querySelector('.text');
-    const avatarImg = document.querySelector('.avatar img');
-    const speechP = document.querySelector('.speech p');
-    const box = document.querySelector('.box');
+let radios = document.querySelectorAll('input[name="inlineRadioOptions"]');
+let paragraphs = document.querySelectorAll(".text p");
+let avatar = document.querySelector(".avatar img");
+let person = document.querySelector(".speech p");
 
-    radios.forEach((radio, index) => {
-        radio.addEventListener('change', () => {
-            if (radio.checked) {
-                const testimonial = testimonials[index];
-                const textParagraphs = textContainer ? textContainer.querySelectorAll('p') : [];
-
-                if (textContainer) textContainer.classList.add('fade-out');
-                if (avatarImg) avatarImg.classList.add('fade-out');
-                if (speechP) speechP.classList.add('fade-out');
-
-                setTimeout(() => {
-                    if (textContainer) {
-                        if (textParagraphs.length > 0) {
-                            textParagraphs[0].textContent = testimonial.textContent;
-                        } else {
-                            textContainer.textContent = testimonial.textContent;
-                        }
-                        textContainer.classList.remove('fade-out');
-                    }
-
-                    if (avatarImg) {
-                        avatarImg.src = testimonial.image;
-                        avatarImg.alt = testimonial.name;
-                        avatarImg.classList.remove('fade-out');
-                    }
-
-                    if (speechP) {
-                        speechP.textContent = testimonial.name + ' - ' + testimonial.title;
-                        speechP.classList.remove('fade-out');
-                    }
-
-                    if (box) {
-                        box.classList.add('pulse');
-                        setTimeout(() => box.classList.remove('pulse'), 600);
-                    }
-                }, 300);
-            }
+radios.forEach(function (radio, index) {
+    radio.addEventListener("click", function () {
+        paragraphs.forEach(function (p, i) {
+            p.textContent = testimonials[index].text[i];
         });
+
+        avatar.src = testimonials[index].image;
+        person.textContent = testimonials[index].name;
     });
 });
