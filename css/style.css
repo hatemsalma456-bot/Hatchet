@@ -391,7 +391,7 @@ header .right nav ul li .nav-item-menu li a:hover {
 
 @media screen and (max-width: 768px) {
 
-    .sec1{
+    .sec1 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -399,9 +399,9 @@ header .right nav ul li .nav-item-menu li a:hover {
         background-position: 72% center;
     }
 
-    .sec1 .about{
-        width:80%;
-        margin-top:50px;
+    .sec1 .about {
+        width: 80%;
+        margin-top: 50px;
         padding-top: 80px;
     }
 
@@ -416,17 +416,17 @@ header .right nav ul li .nav-item-menu li a:hover {
         padding: 10px;
     }
 
-    .sec1 .about-end{
-        width:100%;
-        margin-top:auto;
-        padding-bottom:20px;
-        transform:none;
+    .sec1 .about-end {
+        width: 100%;
+        margin-top: auto;
+        padding-bottom: 20px;
+        transform: none;
     }
 
-    .sec1 .about-end img{
-        width:100%;
-        display:block;
-        margin:0;
+    .sec1 .about-end img {
+        width: 100%;
+        display: block;
+        margin: 0;
     }
 }
 
@@ -1123,7 +1123,6 @@ header .right nav ul li .nav-item-menu li a:hover {
 
 /************** Start sec 6 ************/
 
-/***** Start sec 6 *****/
 .sec6 {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -1278,6 +1277,7 @@ header .right nav ul li .nav-item-menu li a:hover {
 
     .sec6 .cont .butoon a.call {
         margin: 0;
+        padding: 10px 10px;
     }
 }
 
@@ -1306,6 +1306,12 @@ header .right nav ul li .nav-item-menu li a:hover {
         right: 18px;
         width: 8px;
         height: 8px;
+
+    }
+
+    .sec6 .cont .butoon a.call {
+        margin: 0;
+        padding: 5px 5px;
     }
 }
 
