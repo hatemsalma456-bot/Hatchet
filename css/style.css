@@ -161,7 +161,7 @@ header .right nav ul li .nav-item-menu {
     transform: translateX(-50%);
     background: rgb(235, 235, 235);
     min-width: 220px;
-    padding: 0px;
+    padding: 10px;
     border-radius: 5px;
     z-index: 10;
     margin-top: 15px;
@@ -370,6 +370,7 @@ header .right nav ul li .nav-item-menu li a:hover {
     margin-left: 0px;
     width: 85%;
     transform: translateY(40px);
+    margin: auto;
 }
 
 .sec1 .about-end img {
@@ -403,7 +404,6 @@ header .right nav ul li .nav-item-menu li a:hover {
         width: 80%;
         margin-top: 50px;
         padding-top: 50px;
-        transform: translateY(80px);
     }
 
     .sec1 .about .about-words h1 {
