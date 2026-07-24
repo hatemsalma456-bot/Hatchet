@@ -401,8 +401,9 @@ header .right nav ul li .nav-item-menu li a:hover {
 
     .sec1 .about {
         width: 80%;
-        margin-top: 80px;
-        padding-top: 80px;
+        margin-top: 50px;
+        padding-top: 50px;
+        transform: translateY(80px);
     }
 
     .sec1 .about .about-words h1 {
